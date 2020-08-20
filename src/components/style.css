@@ -87,7 +87,7 @@ a.active, a:hover{
         background:whitesmoke;
         height: auto;
         text-align: center;
-        transition: all .5s;
+        transition: all .6s;
     }
     nav ul li{
         display: block;
