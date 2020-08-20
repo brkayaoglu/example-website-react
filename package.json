@@ -13,9 +13,8 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "heroku-postbuild": "npm run build",
-    "start": "serve -s build",
-    //"start": "react-scripts start", //PORT=process.env.PORT
+    
+    "start": "react-scripts start", //PORT=process.env.PORT
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
