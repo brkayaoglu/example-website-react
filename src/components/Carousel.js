@@ -8,6 +8,7 @@ import img3 from '../pics/3.png';
 import img4 from '../pics/4.jpg';
 import img5 from '../pics/5.jpg';
 
+
 function Carousel() {
     return (
         <div id="carousel">
@@ -15,19 +16,26 @@ function Carousel() {
                 className="owl-theme"
                 loop
                 items = "1"
-                nav
-                dots
                 autoPlay
+                nav
+                rewind
+                navText = {
+                    [
+                        '<i class="fa fa-angle-left owl-prev prev-a" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-right owl-next prev-a" aria-hidden="true"></i>'
+                    ]
+                }
+                navContainerClass={[".owl-prev",".owl-next"]}
                 responsive = {
                     {
                         0: {
                             items: 1
                         },
                         600: {
-                            items: 2
+                            items: 1
                         },
                         1000: {
-                            items: 3
+                            items: 1
                         }
                     }
                 }

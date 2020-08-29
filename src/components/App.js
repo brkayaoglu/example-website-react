@@ -18,26 +18,19 @@ function App() {
 
     return (
         <div className="App">
-
             <nav>
-
                 <div className="hamburger icon">
-
                     <div className="line top"></div>
                     <div className="line middle"></div>
                     <div className="line bottom"></div>
-
                 </div>
-                <label className="logo">Mine Ekici</label>
+                <label className="logo"><a href="/" className="logo-link">Mine Ekici</a></label>
                 <ul className="nav-links">
-
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/portfolios">Portfolios</a></li>
                 </ul>
-
             </nav>
-
         </div>
     );
 }
