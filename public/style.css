@@ -140,6 +140,7 @@ a:hover{
     label.logo{
         margin-left: -80px;
         z-index: 2;
+        line-height: 80px;
     }
     
     .icon.close .top{
