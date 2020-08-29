@@ -18,6 +18,7 @@ function Carousel() {
                 items = "1"
                 autoPlay
                 nav
+                dots = {true}
                 rewind
                 navText = {
                     [

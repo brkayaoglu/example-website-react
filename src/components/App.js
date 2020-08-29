@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function App() {
     React.useEffect(() => {
@@ -24,11 +25,11 @@ function App() {
                     <div className="line middle"></div>
                     <div className="line bottom"></div>
                 </div>
-                <label className="logo"><a href="/" className="logo-link">Mine Ekici</a></label>
+                <label className="logo"><a href="/" className="logo-link">Mine EKİCİ</a></label>
                 <ul className="nav-links">
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/portfolios">Portfolios</a></li>
+                    <li><Link to="/about" activeStyle={{color:"red"}}>About</Link></li>
+                    <li><Link to="/contact" activeStyle={{color:"red"}}>Contact</Link></li>
+                    <li><Link to="/portfolios" activeStyle={{color:"red"}}>Portfolios</Link></li>
                 </ul>
             </nav>
         </div>
