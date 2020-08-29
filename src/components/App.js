@@ -1,49 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function App() {
-    var open = true;
     React.useEffect(() => {
         const hamburger = document.querySelector(".hamburger");
         const navLinks = document.querySelector(".nav-links");
         const links = document.querySelectorAll(".nav-links li");
-        const carousel = document.getElementById("carousel");
-        const footer = document.getElementById("footer");
         hamburger.addEventListener('click', () => {
-            if (open) {
-                hamburger.classList.toggle('close');
-                // var timePeriodInMs = 300;
-                // setTimeout(function () {
-                     
-                //      carousel.classList.toggle('display')
-                // },
-                //     timePeriodInMs);
-                //     timePeriodInMs = 300;
-                //     setTimeout(function () {
-                     
-                //         footer.classList.toggle('display');
-                //    },
-                //        timePeriodInMs);
-                    
-                navLinks.classList.toggle("open");
-                links.forEach(link => {
-                    link.classList.toggle('fadess')
-                })
-                open = !open;
-            } else {
-                hamburger.classList.toggle('close');
-                // var timePeriodInMs = 100;
-                // setTimeout(function () {
-                //     // footer.classList.toggle('display');footer.classList.toggle('display');
-                //     carousel.classList.toggle('display')
-                // },
-                //     timePeriodInMs);
-                 navLinks.classList.toggle("open");
-                // footer.classList.toggle('display');
-                links.forEach(link => {
-                    link.classList.toggle('fadess')
-                })
-                open = !open;
-            }
+            hamburger.classList.toggle('close');
+
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle('fadess')
+            })
+
         })
     })
 
