@@ -3,7 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {
-    
+
     faFacebook,
     faLinkedin,
 
@@ -13,14 +13,10 @@ import {
                  </p> */
 function SocialFollow() {
     return (
-        
         <div className="social-container" id="footer">
-        
-            <div className="footer-header">
-                
-            </div>
+
             <div className="footerIcons">
-     
+
                 <a href="https://www.facebook.com/Mineekc" className="social" id="facebookLogo">
                     <FontAwesomeIcon icon={faFacebook} size="2x" />
                 </a>
@@ -28,11 +24,14 @@ function SocialFollow() {
                 " className="social" id="linkedinLogo">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-          
-                
+
+
             </div>
+
         </div>
     )
 }
 
 export default SocialFollow;
+
+/** */

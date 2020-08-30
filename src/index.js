@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import Carousel from './components/Carousel';
 import SocialFollow from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch} from 'react-router-dom'
 
 const HomePage = () => {

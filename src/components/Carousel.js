@@ -11,43 +11,61 @@ import img5 from '../pics/5.jpg';
 
 function Carousel() {
     return (
-        <div id="carousel">
-            <OwlCarousel
-                className="owl-theme"
-                loop
-                items = "1"
-                autoPlay
-                nav
-                dots = {true}
-                rewind
-                navText = {
-                    [
-                        '<i class="fa fa-angle-left owl-prev prev-a" aria-hidden="true"></i>',
-                        '<i class="fa fa-angle-right owl-next prev-a" aria-hidden="true"></i>'
-                    ]
-                }
-                navContainerClass={[".owl-prev",".owl-next"]}
-                responsive = {
-                    {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 1
-                        },
-                        1000: {
-                            items: 1
-                        }
-                    }
-                }
-            >
-                <div class="item"><img src={img1} alt="1" className="itemk"/></div>
-                <div class="item"><img src={img2} alt="2" className="itemk"/></div>
-                <div class="item"><img src={img3} alt="3" className="itemk"/></div>
-                <div class="item"><img src={img4} alt="4" className="itemk"/></div>
-                <div class="item"><img src={img5} alt="5" className="itemk"/></div>
-            </OwlCarousel>
+        <div id="carouselExampleIndicators" class="carousel slide bg-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid w-100" src={img1} alt="First slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid w-100" src={img1} alt="Second slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid w-100" src={img1} alt="Third slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid w-100" src={img1} alt="Fourth slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid w-100" src={img1} alt="Fifth slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
     );
 }
 
