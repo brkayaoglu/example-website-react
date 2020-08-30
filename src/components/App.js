@@ -19,19 +19,20 @@ function App() {
 
     return (
         <div className="App">
-            <nav>
+            <div className="nav">
                 <div className="hamburger icon">
                     <div className="line top"></div>
                     <div className="line middle"></div>
                     <div className="line bottom"></div>
                 </div>
-                <label className="logo"><a href="/" className="logo-link">Mine EKİCİ</a></label>
-                <ul className="nav-links">
-                    <li><Link to="/about" activeStyle={{color:"red"}}>About</Link></li>
-                    <li><Link to="/contact" activeStyle={{color:"red"}}>Contact</Link></li>
-                    <li><Link to="/portfolios" activeStyle={{color:"red"}}>Portfolios</Link></li>
-                </ul>
-            </nav>
+                <div className="logo-div"><label className="logo"><a href="/" className="logo-link">Mine EKİCİ</a></label></div>
+                <div className="nav-links"><ul>
+                <li><Link to="/about" activeStyle={{color:"red"}}>About</Link></li>
+                <li><Link to="/contact" activeStyle={{color:"red"}}>Contact</Link></li>
+                <li><Link to="/portfolios" activeStyle={{color:"red"}}>Portfolios</Link></li>
+            </ul></div>
+                
+            </div>
         </div>
     );
 }
